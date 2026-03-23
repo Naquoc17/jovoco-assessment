@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.4">
+  <diagram name="Star Schema" id="CBGQhDwabjOW3upZSUTZ">
+    <mxGraphModel dx="1789" dy="979" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-203" parent="1" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="fact_sales" vertex="1">
+          <mxGeometry height="235" width="220" x="340" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-204" parent="1" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="dim_customer" vertex="1">
+          <mxGeometry height="170" width="220" x="30" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-212" parent="JLZQil5G5s4jNAM-O_o_-204" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;fillColor=none;labelBackgroundColor=none;fontColor=default;" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;PK customer_key&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;customer_id&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;full_name&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;city&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;customer_type&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;registration_date&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-205" parent="1" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="dim_product" vertex="1">
+          <mxGeometry height="150" width="220" x="550" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-206" parent="1" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="dim_store" vertex="1">
+          <mxGeometry height="150" width="220" x="60" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-215" parent="JLZQil5G5s4jNAM-O_o_-206" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000, #ffffff);" value="&lt;span style=&quot;&quot;&gt;PK store_key&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;store_id&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;store_title&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;city&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;region&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-207" parent="1" style="shape=swimlane;childLayout=stackLayout;horizontal=1;startSize=30;rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;" value="dim_date" vertex="1">
+          <mxGeometry height="170" width="220" x="570" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-208" edge="1" parent="1" source="JLZQil5G5s4jNAM-O_o_-203" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;" target="JLZQil5G5s4jNAM-O_o_-204" value="customer_key">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-209" edge="1" parent="1" source="JLZQil5G5s4jNAM-O_o_-203" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;" target="JLZQil5G5s4jNAM-O_o_-205" value="product_key">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-210" edge="1" parent="1" source="JLZQil5G5s4jNAM-O_o_-203" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;" target="JLZQil5G5s4jNAM-O_o_-206" value="store_key">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-211" edge="1" parent="1" source="JLZQil5G5s4jNAM-O_o_-203" style="endArrow=none;html=1;rounded=0;strokeColor=#000000;fontColor=#000000;" target="JLZQil5G5s4jNAM-O_o_-207" value="date_key">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-213" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000, #ffffff);" value="&lt;div&gt;FK customer_key&lt;br&gt;FK product_key&lt;br&gt;FK store_key&lt;br&gt;FK date_key&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;PK sales_key&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;order_id&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;item_id&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;order_status&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;quantity&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;unit_price&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;line_total&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="220" x="340" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-214" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#000000, #ffffff);" value="&lt;span style=&quot;&quot;&gt;PK product_key&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;product_id&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;product_title&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;category&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;unit_cost&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="550" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JLZQil5G5s4jNAM-O_o_-217" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=default;" value="&lt;span style=&quot;&quot;&gt;PK date_key&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;full_date&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;year&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;quarter&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;month&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;month_name&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;day_of_week&lt;/span&gt;" vertex="1">
+          <mxGeometry height="140" width="220" x="570" y="730" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -4,7 +4,6 @@ from src.utils import normalize_name, parse_date
 
 logger = logging.getLogger(__name__)
 
-
 def transform_stores(cur):
     cur.execute("DROP TABLE IF EXISTS slv.stores CASCADE;")
     cur.execute("""
